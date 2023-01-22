@@ -1,4 +1,5 @@
 public class Shark extends Animal{
+   public static   Shark[]sharks;
     public static void attack(){
         System.out.println("shark is attack");
     }

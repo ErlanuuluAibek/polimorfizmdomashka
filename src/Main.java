@@ -20,15 +20,15 @@ public class Main {
         Animal[]animals={shark,shark1,shark2,shark3,shark4,eagle,eagle1,eagle2,eagle3,eagle4,turtle,turtle1,turtle2,turtle3,turtle4};
         for(Animal animal:animals){
             if(animal instanceof Shark){
-                Shark[]sharks={(Shark) animal};
+                Shark.sharks = new Shark[]{(Shark) animal};
                 shark.eat();
                 Shark.attack();
             }else if(animal.getClass().getName().equals("Turtle")){
-                Turtle[]turtles={(Turtle) animal};
+                Turtle.turtles = new Turtle[]{(Turtle) animal};
                 turtle.eat();
                 Turtle.swim();
             }else{
-                Eagle[]eagles={(Eagle) animal};
+                Eagle.eagles = new Eagle[]{(Eagle) animal};
                 eagle.eat();
                 Eagle.fly();
             }
